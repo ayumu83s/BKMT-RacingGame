@@ -15,9 +15,10 @@ public class Accessor
     }
 
     public SceneManager sceneManager = null;
-    public void Initialize()
+    public void Initialize(AppMain appMain)
     {
-        sceneManager = new SceneManager();
+        Transform inst = Utility.Realize("SceneManager", appMain.transform_);
+        sceneManager = inst.GetComponent<SceneManager>();
         sceneManager.Initialize();
     }
 }
