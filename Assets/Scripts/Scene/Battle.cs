@@ -9,8 +9,15 @@ public class Battle : SceneBase
     }
     IEnumerator DoInitialize()
     {
-        Debug.Log("Battle");
-        yield return new WaitForSeconds(2.0f);
+        var op = LoadSceneFile("Battle");
+        if (null == op)
+            yield break;
+
+        while (!op.isDone)
+        {
+            yield return null;
+        }
+
         base.Initialize();
     }
 

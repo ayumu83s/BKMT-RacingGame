@@ -7,6 +7,10 @@ public class SceneBase : MonoBehaviour
     {
         get; set;
     }
+    public string sceneFileName
+    {
+        get; set;
+    }
 
     void Awake()
     {
@@ -17,5 +21,32 @@ public class SceneBase : MonoBehaviour
     {
         // フェードインとか入れる
         isInitialized = true;
+    }
+
+    public virtual void OnDestroy()
+    {
+        UnloadSceneFile();
+    }
+
+    /*
+     * UnitySceneの読み込み
+     */
+    public AsyncOperation LoadSceneFile(string sceneName)
+    {
+        sceneFileName = sceneName;
+        var mode = UnityEngine.SceneManagement.LoadSceneMode.Additive;
+        return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName, mode);
+    }
+
+    /*
+     * UnitySceneの破棄
+     */
+    public void UnloadSceneFile()
+    {
+        if (!string.IsNullOrEmpty(sceneFileName))
+        {
+            UnityEngine.SceneManagement.SceneManager.UnloadScene(sceneFileName);
+        }
+        sceneFileName = "";
     }
 }

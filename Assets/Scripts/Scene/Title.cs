@@ -9,8 +9,15 @@ public class Title : SceneBase
     }
     IEnumerator DoInitialize()
     {
-        Debug.Log("Title");
-        yield return new WaitForSeconds(2.0f);
+        var op = LoadSceneFile("Title");
+        if (null == op)
+            yield break;
+
+        while (!op.isDone)
+        {
+            yield return null;
+        }
+
         base.Initialize();
     }
 
@@ -19,6 +26,9 @@ public class Title : SceneBase
         if (!isInitialized)
             return;
 
-        Accessor.I.sceneManager.ChangeScene("CharacterSelect");
+        if (Input.GetKeyDown("z"))
+        {
+            Accessor.I.sceneManager.ChangeScene("CharacterSelect");
+        }
     }
 }

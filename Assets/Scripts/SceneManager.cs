@@ -7,6 +7,7 @@ public class SceneManager : MonoBehaviour
     SceneBase currentScene_ = null;
     SceneBase nextScene_ = null;
     bool isChanging = false;
+    string sceneFileName;
 
     private void Awake()
     {
