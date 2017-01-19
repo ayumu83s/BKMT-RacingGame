@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 9341a23dd54edc049a5aba7441d34c6c
+timeCreated: 1479041563
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chara
+    100002: Hair1
+    100004: Hair2
+    100006: Hair3
+    100008: Hair4
+    100010: Handle
+    100012: Handle 1
+    100014: Head
+    100016: Head 1
+    100018: ikHandle3
+    100020: ikHandle4
+    100022: ikHandle5
+    100024: LeftArm
+    100026: LeftHand
+    100028: LeftHand 1
+    100030: LeftShoulder1
+    100032: Mike
+    100034: RightArm
+    100036: RightHand
+    100038: RightHand 1
+    100040: RightShoulder1
+    100042: Root2
+    100044: Sakamoto2
+    100046: //RootNode
+    100048: Spine
+    100050: Spine1
+    100052: Spine2
+    100054: Tail1
+    100056: Tail2
+    100058: Tail3
+    100060: Tail4
+    100062: Tail5
+    100064: Tail6
+    400000: Chara
+    400002: Hair1
+    400004: Hair2
+    400006: Hair3
+    400008: Hair4
+    400010: Handle
+    400012: Handle 1
+    400014: Head
+    400016: Head 1
+    400018: ikHandle3
+    400020: ikHandle4
+    400022: ikHandle5
+    400024: LeftArm
+    400026: LeftHand
+    400028: LeftHand 1
+    400030: LeftShoulder1
+    400032: Mike
+    400034: RightArm
+    400036: RightHand
+    400038: RightHand 1
+    400040: RightShoulder1
+    400042: Root2
+    400044: Sakamoto2
+    400046: //RootNode
+    400048: Spine
+    400050: Spine1
+    400052: Spine2
+    400054: Tail1
+    400056: Tail2
+    400058: Tail3
+    400060: Tail4
+    400062: Tail5
+    400064: Tail6
+    4300000: Mike
+    4300002: Handle
+    4300004: Sakamoto2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Handle
+    13700002: Mike
+    13700004: Sakamoto2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
