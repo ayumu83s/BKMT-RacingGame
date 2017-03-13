@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Title : SceneBase
+public class CharacterSelectBattle : SceneBase
 {
     public override void Initialize()
     {
@@ -9,7 +9,7 @@ public class Title : SceneBase
     }
     IEnumerator DoInitialize()
     {
-        var op = LoadSceneFile("Title");
+        var op = LoadSceneFile("CharacterSelectBattle");
         if (null == op)
             yield break;
 
@@ -17,7 +17,7 @@ public class Title : SceneBase
         {
             yield return null;
         }
-
+        
         base.Initialize();
     }
 
@@ -25,5 +25,10 @@ public class Title : SceneBase
     {
         if (!isInitialized)
             return;
+
+        if (Input.GetKeyDown("z"))
+        {
+            Accessor.I.sceneManager.ChangeScene("CourseSelect");
+        }
     }
 }

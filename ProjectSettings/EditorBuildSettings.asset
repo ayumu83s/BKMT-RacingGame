@@ -10,8 +10,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
   - enabled: 1
-    path: Assets/Scenes/CharacterSelect.unity
+    path: Assets/Scenes/CharacterSelectBattle.unity
   - enabled: 1
     path: Assets/Scenes/CourseSelect.unity
   - enabled: 1
     path: Assets/Scenes/Battle.unity
+  - enabled: 1
+    path: Assets/Scenes/CharacterSelectSingle.unity

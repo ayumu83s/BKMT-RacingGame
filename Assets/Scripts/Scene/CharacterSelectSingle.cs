@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterSelect : SceneBase
+public class CharacterSelectSingle : SceneBase
 {
     public override void Initialize()
     {
@@ -9,7 +9,7 @@ public class CharacterSelect : SceneBase
     }
     IEnumerator DoInitialize()
     {
-        var op = LoadSceneFile("CharacterSelect");
+        var op = LoadSceneFile("CharacterSelectSingle");
         if (null == op)
             yield break;
 
